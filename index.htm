@@ -1,40 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>order list : unorder list</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body class="boody">
-    <h1 class="h1">Nested list</h1>
-    <ol>
-        <li>choclate</li>
-        </ol>
-        <ul>
-            <b>
-            <li>dairy milk</li>
-            <li>bournvile</li>
-            <li>munch</li> </b>
-          </ul>  
-          <ol>
-            <li>Games</li>
-          </ol>
-          <ul> <b>
-            <li>circket</li>
-            <li>football</li>
-            <li>hockey</li> </b>
-          </ul>
-          <ol>
-            <li>fruits</li>
-            <ul>
-                <b>
-                <li>apple</li>
-                <li>orrange</li>
-                <li>graps</li>
-            </b>
-            </ul>
-          </ol>
+<!-- saved from url=(0031)http://127.0.0.1:5500/index.htm -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
-</body>
-</html>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body class="bodi"><header><b><i><u><img src="http://127.0.0.1:5500/index.htm" alt=""></u></i></b></header>
+
+    <html:5><b>HTML CSS JS</b></html:5>
+    <dl>
+        <dt><b><i><u>HTML</u></i></b></dt>
+ <dd>HTML stands for Hyper Text Markup Language
+    HTML is the standard markup language for creating Web pages
+    HTML describes the structure of a Web page
+    HTML consists of a series of elements
+    HTML elements tell the browser how to display the content
+    HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc.
+</dd>
+    </dl>
+    <dl>
+        <dt><b><i><u>HTML ELEMENT</u></i></b></dt>
+        <dd>What is an HTML Element?
+            An HTML element is defined by a start tag, some content, and an end tag:
+            
+            <tagname> Content goes here... </tagname>
+            The HTML element is everything from the start tag to the end tag:
+        </dd></dl>
+        <dl>
+            <dt><b><i><u>EXAMPLE</u></i></b></dt>
+            <dd><div class="my"> 
+                <h1>My First Heading</h1>
+                <p>My first paragraph.</p>
+                Start tag	Element content	End tag
+                <h1>	My First Heading	</h1>
+                <p>	My first paragraph.	</p>
+                <br>	none	none <br>
+                <button class="TRY">TRY IT YOUR SELF</button>
+            </div></dd>
+            
+        </dl>
+        
+            <link rel="stylesheet" href="./introduction_files/style.css">
+        <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+    <dl>
+        <dt><b><i><u>CSS</u></i></b></dt>
+        <dd>CSS is the language we use to style an HTML document.
+
+            CSS describes how HTML elements should be displayed.
+            
+            This tutorial will teach you CSS from basic to advanced.
+            CSS stands for Cascading Style Sheets
+CSS describes how HTML elements are to be displayed on screen, paper, or in other media
+CSS saves a lot of work. It can control the layout of multiple web pages all at once
+External stylesheets are stored in CSS files
+Here we will show one HTML page displayed with four different stylesheets. Click on the "Stylesheet 1", "Stylesheet 2", "Stylesheet 3", "Stylesheet 4" links below to see the different styles:
+            </dd>
+    </dl>
+<dl>
+    <dt><b><i><u>CSS COLOR</u></i></b></dt>
+    <dd><i>RGB Value
+        In CSS, a color can be specified as an RGB value, using this formula:
+        
+        rgb(red, green, blue)
+        
+        Each parameter (red, green, and blue) defines the intensity of the color between 0 and 255.
+        
+        For example, rgb(255, 0, 0) is displayed as red, because red is set to its highest value (255) and the others are set to 0.
+        
+        To display black, set all color parameters to 0, like this: rgb(0, 0, 0).
+        
+        To display white, set all color parameters to 255, like this: rgb(255, 255, 255).
+        
+        Experiment by mixing the RGB values below:</i></dd>
+       <pre class="example"> Example <br>
+<p class="rbg2">rgb(255, 0, 0)</p>
+<p class="rbg3">rgb(0, 0, 255)</p>
+<p class="rbg4">rgb(60, 179, 113)</p>
+<p class="rbg5">rgb(238, 130, 238)</p>
+<p class="rbg6">rgbp(255, 165, 0)</p>
+
+</pre>
+
+</dl></body></html>
